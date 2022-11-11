@@ -10,17 +10,24 @@
     justify-content: space-between;
 }
 
+ul{
+    margin: 0px;
+}
+
 li{
     display: inline;
     align-self: center;
+    font-weight: 400;
+    color: black;
     margin-left: 15px;
 }
 
 .site-name{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 24px;
-    color: rgb(0, 0, 0);
+    color: rgb(179, 179, 179);
 }
 
 .nav-menu{
@@ -34,8 +41,13 @@ a{
     text-decoration: none;
 }
 
-.nav-menu:hover{
+a:hover{
     color: white;
+    transition: 0.3s;
+}
+
+.nav-menu:hover{
+    -webkit-text-stroke: 1px black;
     transition: 0.3s;
 }
 
@@ -55,9 +67,70 @@ a{
 
 .sample{
     background-color: pink;
+    -webkit-text-stroke: 1px black;
 }
 
 .sample:hover{
-    color: aqua;
+    background-color: transparent;
+    color: white;
+    -webkit-text-stroke: 1px black;
     transition: 0.3s;
+}
+
+.highlight{
+    color: white;
+    -webkit-text-stroke: 1px black;
+    transition: 0.3s;
+}
+
+.highlight:hover{
+    background-color: pink;
+    transition: 0.3s;
+}
+
+.type1:hover{
+    background-color: rgb(134, 199, 224);
+    color: black;
+    transition: 0.3s;
+}
+
+.type2:hover{
+    background-color: rgb(246, 146, 196);
+    color: black;
+    transition: 0.3s;
+}
+
+.type3:hover{
+    background-color: rgb(181, 246, 156);
+    color: black;
+    transition: 0.3s;
+}
+
+/*recent works*/
+
+.recent-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(179, 179, 179);
+
+    text-align: right;
+    margin-top: 100px;
+}
+
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(179, 179, 179);
+    border-top: 1px solid rgb(179, 179, 179);
+    border-bottom: 1px solid rgb(179, 179, 179);
 }
